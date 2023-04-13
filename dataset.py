@@ -82,7 +82,7 @@ model.add(Dense(43, activation='softmax'))
 
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
-eps = 4
+eps = 15
 history = model.fit(X_train, y_train, batch_size=64, epochs=eps, validation_data=(X_test, y_test))
 # Figure size
 plt.figure(figsize=(10, 5))
